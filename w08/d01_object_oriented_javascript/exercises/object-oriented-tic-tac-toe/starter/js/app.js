@@ -1,5 +1,5 @@
 //create a new game object
 var game = new Game()
 //create a new game view
-var  gameview = new Gameview(".game", game)
+var  gameview = new GameView(game)
   //using the game object
