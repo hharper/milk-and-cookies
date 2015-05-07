@@ -5,8 +5,8 @@ $(document).ready(function(){
     type: "GET",
     dataType: "json"
   }).done(function(response){
-    console.log("temperature " + response.current_observation.temp_f)
-    console.log("location " + response.current_observation.display_location.full)
+    console.log("temperature F: " + response.current_observation.temp_f)
+    console.log("location: " + response.current_observation.display_location.full)
     console.log("wind gust MPH: " + response.current_observation.wind_gust_mph)
     console.log("wind gust KPH: " + response.current_observation.wind_gust_kph)
   }).fail(function(){
